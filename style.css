@@ -4,18 +4,29 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 320px;
+body {
+  position: relative;
+  background-color: hsl(30, 38%, 92%);
+  width: 100vw;
+  height: 100vh;
 }
+
 
 .mobile {
   display: none;
 }
 
+.text {
+  background-color: white;
+  padding: 23px;
+}
+
+
 @media (max-width: 380px) {
   .desktop {
     display: none;
   }
+
   .mobile {
     display: inherit;
   }
@@ -23,9 +34,25 @@ img {
 
 @media (min-width: 381px) {
   .container {
-    height: 100vh;
-    background-color: hsl(30, 38%, 92%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
+  .border {
+    max-width: 700px;
+    display: flex;
+    border-radius: 30px;
+  }
+
+  .border img {
+    width: 50%;
+  }
+}
+
+button {
+  cursor: pointer;
 }
 
 .attribution {
