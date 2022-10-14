@@ -19,6 +19,7 @@ body {
 .text {
   background-color: white;
   padding: 23px;
+  width: 350px;
 }
 
 
@@ -41,13 +42,13 @@ body {
   }
 
   .border {
-    max-width: 700px;
     display: flex;
-    border-radius: 30px;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .border img {
-    width: 50%;
+    width: 350px;
   }
 }
 
